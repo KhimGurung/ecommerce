@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import FilterGender from "./FilterGender"
+import FilterGender from "@components/BrowseFilter/FilterGender"
 
 describe("<FilterGender />", () => {
     it("has rendered properly", () => {

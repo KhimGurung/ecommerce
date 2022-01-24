@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import NavBar from "./NavBar"
+import NavBar from "@components/NavBar"
 
 describe("<NavBar />", () => {
     it("has rendered properly", async () => {

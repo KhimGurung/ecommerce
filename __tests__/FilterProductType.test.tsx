@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import FilterProductType from "./FilterProductType"
+import FilterProductType from "@components/BrowseFilter/FilterProductType"
 
 describe("<FilterProductType />", () => {
     it("", () => {

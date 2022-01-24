@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import Accordian from "./Accordian"
+import Accordian from "@components/Accordian"
 
 describe("<Accordian />", () => {
     it("has rendered properly", () => {

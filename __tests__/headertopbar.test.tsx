@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import Head from 'next/head'
-import HeaderTopBar from './HeaderTopBar'
+import HeaderTopBar from '@components/HeaderTopBar'
 
 describe('HeaderTopBar', () => {
     it('has rendered properly', async () => {

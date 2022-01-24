@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import CardProduct from "./CardProduct"
+import CardProduct from "@components/CardProduct"
 
 const product =  {
     image: "https://via.placeholder.com/268x380",

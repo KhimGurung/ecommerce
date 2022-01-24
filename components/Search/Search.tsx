@@ -5,7 +5,7 @@ import { FiSearch } from "react-icons/fi";
 const categoryList = ["Category 1", "Category 2", "Category 3"]
 
 interface search{
-    className: string
+    className?: string
 }
 
 const Search = ({ className }: search) => {

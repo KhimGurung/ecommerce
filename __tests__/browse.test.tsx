@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import Browse from "./browse"
+import Browse from "../pages/browse"
 
 describe("<Browse />", () => {
     it("has rendered properly", () => {

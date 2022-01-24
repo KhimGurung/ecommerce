@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react'
-import CategoryMenu from "./CategoryMenu"
+import CategoryMenu from "@components/CategoryMenu"
 
 describe("<CategoryMenu />", () => {
     it("has rendered properly", () => {

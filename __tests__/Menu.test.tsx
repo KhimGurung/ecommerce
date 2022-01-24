@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import Menu from "./Menu"
+import Menu from "@components/Menu"
 
 const menuList = ["About", "Delivery", "Return", "Payments", "Contact"]
 

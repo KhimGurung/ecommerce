@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react"
-import Selector from "./Selector"
+import Selector from "@components/Selector"
 
 const setOption = jest.fn()
 const options = ["option 1", "option 2", "option 3"]

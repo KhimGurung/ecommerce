@@ -1,5 +1,5 @@
 import { getAllByRole, render, screen } from "@testing-library/react"
-import BrowseFilter from "./BrowseFilter"
+import BrowseFilter from "@components/BrowseFilter"
 
 describe("<BrowseFilter />", () => {
     it("has rendered properly", () => {
