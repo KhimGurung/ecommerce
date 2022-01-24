@@ -5,7 +5,7 @@ import Search from '@components/Search'
 import WishList from '@components/WishList'
 import React from 'react'
 
-function HeaderSearchBar() {
+const HeaderSearchBar = () => {
     return (
         <section data-testid="header-search-bar">
             <div className="container lg:flex items-center grid lg:grid-cols-3 md:grid-cols-[1fr_auto_auto_auto] grid-cols-[auto_1fr_auto_auto] gap-3 lg:py-10 py-5">

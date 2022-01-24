@@ -1,7 +1,7 @@
 import React from 'react'
-import { FiShoppingBag } from "react-icons/fi";
+import { FiShoppingBag } from "react-icons/fi"
 
-function BagItems() {
+const BagItems = () => {
     return (
         <section    data-testid="bag-items"
                     className="flex items-center gap-2 ml-4">

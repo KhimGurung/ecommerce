@@ -18,3 +18,18 @@ a {
 * {
   box-sizing: border-box;
 }
+
+input[type="checkbox"]{
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+label{
+  transition: all 0.2s ease-in-out;
+}
+
+label:hover,
+input:hover{
+  cursor: pointer;
+  color: #cbd5e1;
+}

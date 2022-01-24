@@ -5,7 +5,7 @@ interface category{
     selectCategory: Function
 }
 
-function CategoryList({ categoryList, selectCategory }: category) {
+const CategoryList = ({ categoryList, selectCategory }: category) => {
     return (
         <ul role="category-list" className="text-sm absolute bg-slate-200 p-2 px-4">
             {

@@ -5,7 +5,7 @@ interface menu {
     menuList: string[]
 }
 
-function Menu({ menuList }: menu) {
+const Menu = ({ menuList }: menu) => {
     return (
         <ul className={ `${style.menu} flex lg:gap-10 gap-5 items-center overflow-x-auto `}>
             {

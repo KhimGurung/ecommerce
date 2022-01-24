@@ -8,7 +8,7 @@ interface categorymenu {
     className: string
 }
 
-function CategoryMenu({ className }: categorymenu) {
+const CategoryMenu = ({ className }: categorymenu) => {
     const [categoryListVisible, setCategoryListVisible] = useState(false)
     const selectCategory = (category: string) => {
         console.log(category)

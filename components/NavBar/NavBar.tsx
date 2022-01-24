@@ -4,7 +4,7 @@ import CategoryMenu from '@components/CategoryMenu'
 
 const menuList = ["About", "Delivery", "Return", "Payments", "Contact"]
 
-function NavBar() {
+const NavBar = () => {
     return (
         <nav role="nav-bar" className="border-b py-2">
             <section className="container flex items-stretch gap-7">

@@ -17,10 +17,10 @@ describe('HeaderTopBar', () => {
         const registerAndSignIn = await screen.findByText('Register or Sign In')
         expect(registerAndSignIn).toBeInTheDocument()
 
-        const language = await screen.findByTestId('language')
+        const language = screen.getByRole('language')
         expect(language).toBeInTheDocument()
-        
-        const currency = await screen.findByTestId('currency')
+
+        const currency = screen.getByRole('currency')
         expect(currency).toBeInTheDocument()
     })
 })

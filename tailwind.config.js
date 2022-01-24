@@ -16,10 +16,18 @@ module.exports = {
 				DEFAULT: "1rem",
 				sm: '2rem',
 				lg: '3rem',
-				xl: '4rem'		
+				xl: '5rem'		
+			},
+			screens: {
+				"2xl": "1820px"
 			}
 		},
-		extend: {},
+		extend: {
+			screens: {
+				"xl": "1380px",
+				"2xl": "1820px",
+			  },
+		},
 	},
 	variants: {},
 	plugins: [
