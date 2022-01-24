@@ -5,7 +5,7 @@ const Home: NextPage = () => {
     return (
         <>
             <Header />
-            <section>
+            <section className="container">
                 <h1>Home</h1>
                 <p>Test driving development with NextJs. Its still under develoment.</p>
                 <p>Go manually to /browse to see brouse page</p>
