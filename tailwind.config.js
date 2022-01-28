@@ -21,13 +21,7 @@ module.exports = {
 			screens: {
 				"2xl": "1820px"
 			}
-		},
-		extend: {
-			screens: {
-				"xl": "1380px",
-				"2xl": "1820px",
-			  },
-		},
+		}	
 	},
 	variants: {},
 	plugins: [

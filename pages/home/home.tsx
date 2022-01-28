@@ -1,16 +1,17 @@
 import type { NextPage } from 'next'
-import Header from '@components/Header'
+import PageTemplate from '@components/PageTemplate'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
     return (
-        <>
-            <Header />
-            <section className="container">
-                <h1>Home</h1>
-                <p>Test driving development with NextJs. Its still under develoment.</p>
-                <p>Go manually to /browse to see brouse page</p>
-            </section>
-        </>
+        <PageTemplate>
+            <h1>Home</h1>
+            <p>Test driving development with NextJs. Its still under develoment.</p>
+            <p>Go manually to /browse to see brouse page</p>
+            <Link href="/browse">
+                <a>Go To Browse Page</a>
+            </Link>
+        </PageTemplate>
     )
 }
 

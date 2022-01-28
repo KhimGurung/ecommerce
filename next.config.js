@@ -11,5 +11,7 @@ module.exports = {
 	sassOptions: {
 		includePaths: [path.join(__dirname, 'styles')]
 	},
-	excludeFile: (str) => /\*.{spec,test}.tsx/.test(str)
+	images: {
+		domains: ['picsum.photos'],
+	},
 }

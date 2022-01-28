@@ -4,7 +4,7 @@ import Header from '@components/Header'
 describe('Header', () => {
     it('has rendered properly', async () => {
         render(<Header />)
-        const header = await screen.findByTestId("header")
+        const header = screen.getByRole("banner")
         expect(header).toBeInTheDocument()
     })
 

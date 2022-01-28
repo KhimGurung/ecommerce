@@ -4,13 +4,14 @@ import List from "@components/List"
 
 interface ISelector {
     className?: string,
+    wrapperClass?: string,
     role: string,
     options: string[],
     option: string,
     setOption: Function
 }
 
-const Selector = ({ role, options, option, setOption, className }: ISelector) => {
+const Selector = ({ role, options, option, setOption, className, wrapperClass }: ISelector) => {
     const [listVisible, setListVisible] = useState(false)
     const selectorRef = useRef<HTMLDivElement>(null)
     const buttonRef = useRef<HTMLButtonElement>(null)
@@ -35,7 +36,7 @@ const Selector = ({ role, options, option, setOption, className }: ISelector) =>
     }, [listVisible])
 
     return (
-        <section role={ role } className="relative max-w-fit" ref={ selectorRef }>
+        <section role={ role } className={`relative max-w-fit ${wrapperClass}`} ref={ selectorRef }>
             <button onClick={ toggleList } 
                     className={`flex gap-2 items-center justify-between ${className}`}
                     ref={ buttonRef }>

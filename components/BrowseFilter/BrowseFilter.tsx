@@ -1,5 +1,7 @@
 import Accordian from '@components/Accordian'
 import React from 'react'
+import { BsSliders } from "react-icons/bs"
+
 import FilterBrand from './FilterBrand'
 import FilterChildren from './FilterChildren'
 import FilterColor from './FilterColor'
@@ -12,6 +14,12 @@ import FilterSize from './FilterSize'
 const BrowseFilter = () => {
     return (
         <section role="browse-filter">
+            <div className="flex items-center justify-between lg:hidden">
+                <h3 className="text-3xl">Filter</h3>
+                <label htmlFor="toggleFilter">
+                    <BsSliders className="text-2xl" />
+                </label>
+            </div>
             <hr className="mb-4" />
             <FilterGender />
             <hr className="mb-4" />

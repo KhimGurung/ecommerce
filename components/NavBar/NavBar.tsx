@@ -2,7 +2,28 @@ import React from 'react'
 import Menu from "@components/Menu"
 import CategoryMenu from '@components/CategoryMenu'
 
-const menuList = ["About", "Delivery", "Return", "Payments", "Contact"]
+const menuList = [
+    {
+        title: "About",
+        link: "'/"
+    }, 
+    {
+        title: "Delivery",
+        link: "/"
+    }, 
+    {
+        title: "Return",
+        link: "/"
+    }, 
+    {
+        title: "Payments",
+        link: "/"
+    }, 
+    {
+        title: "Contact",
+        link: "/"
+    }
+]
 
 const NavBar = () => {
     return (

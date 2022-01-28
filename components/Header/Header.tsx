@@ -5,7 +5,7 @@ import React from "react"
 
 const Header = () => {
     return (
-        <header data-testid="header">
+        <header className="z-40">
             <HeaderTopBar />
             <HeaderSearchBar />
             <NavBar />

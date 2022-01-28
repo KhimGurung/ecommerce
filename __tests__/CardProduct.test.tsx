@@ -3,8 +3,8 @@ import CardProduct from "@components/CardProduct"
 
 const product =  {
     image: "https://via.placeholder.com/268x380",
-    brand: "Bugatti",
-    name: "Mercury T-shirt",
+    category: "Bugatti",
+    title: "Mercury T-shirt",
     price: "30"
   }
 

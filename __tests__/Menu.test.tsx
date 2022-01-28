@@ -1,7 +1,28 @@
 import { render, screen } from "@testing-library/react"
 import Menu from "@components/Menu"
 
-const menuList = ["About", "Delivery", "Return", "Payments", "Contact"]
+const menuList = [
+    {
+        title: "About",
+        link: "/"
+    }, 
+    {
+        title: "Delivery",
+        link: "/"
+    }, 
+    {
+        title: "Return",
+        link: "/"
+    }, 
+    {
+        title: "Payments",
+        link: "/"
+    }, 
+    {
+        title: "Contact",
+        link: "/"
+    }
+]
 
 describe("<Menu />", () => {
     it("has rendered properly", async () => {
@@ -16,6 +37,9 @@ describe("<Menu />", () => {
         expect(menuList.length).toEqual(menuList.length)
 
         const renderedMenuItems = menuItems.map(item => item.textContent)
-        expect(renderedMenuItems).toEqual(menuList)
+        expect(renderedMenuItems).toEqual(menuList.map(menu => menu.title))
+
+        const linkAbout = screen.getByRole("link", { name: "About"})
+        expect(linkAbout).toHaveAttribute("href", "/")
     })
 })

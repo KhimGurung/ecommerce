@@ -1,0 +1,9 @@
+.productimage{
+    div:first-of-type{
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    div:first-of-type::-webkit-scrollbar{
+        display: none;
+    }
+}
